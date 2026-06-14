@@ -1,0 +1,7 @@
+# DiscVault
+
+Website for **DiscVault** — a local-first Android app for cataloging your DVD, Blu-ray and 4K movie
+collection. Scan a barcode to catalog a disc, track every edition, and always know what to watch next.
+Your collection stays on your device.
+
+**Live at https://discvault.us**
