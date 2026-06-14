@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DiscVault — Privacy Policy</title>
+<meta name="description" content="DiscVault privacy policy — a local-first app. Your collection stays on your device; no accounts, no analytics, nothing sold." />
+<meta name="theme-color" content="#0c0d10" />
+<link rel="icon" href="./favicon.png" />
+<link rel="stylesheet" href="./styles.css" />
+<style>
+  .doc { max-width:760px; }
+  .doc h2 { font-size:20px; margin:30px 0 8px; }
+  .doc p, .doc li { color:#cbd2dd; }
+  .doc ul { padding-left:20px; }
+  .doc a { color:var(--accent); }
+  .muted { color:var(--mute); font-size:14px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="./index.html"><img src="./icon.png" alt="DiscVault icon" /> DiscVault</a>
+    <nav class="nav">
+      <a class="btn btn-ghost" href="./index.html">← Back</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap doc">
+      <p class="eyebrow">Privacy</p>
+      <h1 style="font-size:34px;">Privacy Policy</h1>
+      <p class="muted">Last updated: 2026 · DiscVault beta</p>
+
+      <p>DiscVault is <strong>local-first</strong>. Your collection — titles, editions, copies, notes,
+      photos, watch history and stats — is stored only in a database on your own device. There is no
+      DiscVault account, and that data is never uploaded to us or anyone else.</p>
+
+      <h2>What leaves your device</h2>
+      <p>The app only makes network requests for these specific, user-driven purposes:</p>
+      <ul>
+        <li><strong>Movie metadata (TMDB).</strong> When you scan or search for a film, DiscVault asks
+        The Movie Database for the cover, cast, runtime and synopsis, using a free API key that
+        <em>you</em> provide. Your request goes directly from your device to TMDB.</li>
+        <li><strong>Barcode lookup (UPCItemDB).</strong> When you scan a barcode, the number is sent to
+        UPCItemDB to resolve the product title. Scanned barcodes are cached on your device so each is
+        only ever looked up once.</li>
+        <li><strong>Beta unlock (optional).</strong> If you redeem a beta Pro code, the app sends that
+        code and a randomly generated install identifier to our license server purely to validate the
+        code. We do not collect your name, email, or any other personal information.</li>
+      </ul>
+
+      <h2>What we collect</h2>
+      <p><strong>Nothing.</strong> DiscVault contains no analytics, no advertising, no crash-reporting
+      SDKs, and no tracking. We have no servers that store your collection and no way to see it.</p>
+
+      <h2>Permissions</h2>
+      <ul>
+        <li><strong>Camera</strong> — used solely to scan the barcodes on your disc cases. No images
+        from scanning are stored or transmitted.</li>
+        <li><strong>Photos</strong> — only if you choose to attach a photo of your own case or shelf.
+        Those photos stay on your device.</li>
+      </ul>
+
+      <h2>Your data, your control</h2>
+      <p>You can export your entire collection to CSV or a JSON backup at any time from Settings, and
+      you can delete everything by clearing the app's data or uninstalling. Because the data lives on
+      your device, uninstalling removes it permanently.</p>
+
+      <h2>Children</h2>
+      <p>DiscVault is not directed at children under 13 and collects no personal data from anyone.</p>
+
+      <h2>Changes</h2>
+      <p>If this policy changes, the updated version will be posted on this page.</p>
+
+      <h2>Contact</h2>
+      <p>Questions? Reach out at <a href="mailto:tes@discvault.us">tex@discvault.us</a>.</p>
+
+      <div class="tmdb-attr" style="margin-top:40px;">
+        <img src="./tmdb.svg" alt="TMDB" />
+        <p style="color:var(--mute);">This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>
