@@ -143,7 +143,51 @@ footer a:hover { color:var(--text); }
 .tmdb-attr img { height:18px; margin-bottom:8px; }
 .tmdb-attr p { margin:0; font-size:12px; line-height:1.5; }
 
+/* ─── Long-form content / articles (FAQ + guide pages) ─── */
+.crumbs { font-size:13px; color:var(--mute); margin-bottom:18px; }
+.crumbs a { color:var(--mute); }
+.crumbs a:hover { color:var(--text); }
+.crumbs span { margin:0 6px; opacity:.6; }
+
+.prose { max-width:760px; }
+.prose h1 { font-size:clamp(30px,5vw,42px); margin-bottom:14px; }
+.prose h2 { font-size:24px; margin:36px 0 10px; }
+.prose h3 { font-size:19px; margin:26px 0 8px; }
+.prose p, .prose li { color:#cbd2dd; font-size:16px; }
+.prose .lead { font-size:19px; color:var(--text); margin-bottom:22px; }
+.prose ul, .prose ol { padding-left:22px; margin:12px 0; }
+.prose li { margin:7px 0; }
+.prose a { color:var(--accent); }
+.prose a.btn-accent { color:#000; }
+.prose a.btn-ghost { color:var(--text); }
+.prose strong { color:var(--text); }
+.muted { color:var(--mute); font-size:14px; }
+
+/* Comparison table */
+.cmp { width:100%; border-collapse:collapse; margin:20px 0; font-size:15px; }
+.cmp th, .cmp td { border:1px solid var(--edge); padding:10px 12px; text-align:left; }
+.cmp th { background:var(--panel2); font-weight:700; }
+.cmp caption { caption-side:bottom; color:var(--mute); font-size:13px; margin-top:8px; text-align:left; }
+.cmp td.y { color:var(--green); font-weight:700; }
+.cmp td.n { color:var(--mute); }
+
+/* FAQ accordion (also used for homepage teaser) */
+.faq { max-width:760px; }
+.faq details { border:1px solid var(--edge); border-radius:14px; background:var(--panel); padding:0 20px; margin-bottom:12px; }
+.faq summary { cursor:pointer; font-weight:700; font-size:17px; padding:18px 0; list-style:none; display:flex; justify-content:space-between; align-items:center; gap:14px; }
+.faq summary::-webkit-details-marker { display:none; }
+.faq summary::after { content:"+"; color:var(--accent); font-weight:800; font-size:20px; }
+.faq details[open] summary::after { content:"–"; }
+.faq details[open] summary { padding-bottom:6px; }
+.faq .a { color:var(--mute); padding-bottom:18px; font-size:15px; }
+.faq .a a { color:var(--accent); }
+
+/* In-content CTA band */
+.cta-band { text-align:center; margin:42px 0 6px; }
+
 @media (max-width:640px){
   section { padding:54px 0; }
   .nav .link { display:none; }
+  .cmp { font-size:13px; }
+  .cmp th, .cmp td { padding:8px; }
 }

@@ -3,11 +3,13 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>DiscVault — the collector-grade vault for your movie shelf</title>
-<meta name="description" content="A local-first Android app to catalog your DVD, Blu-ray and 4K collection. Scan barcodes, track every edition, never double-buy, and know what to watch next. Free for up to 100 movies." />
+<title>DiscVault — DVD, Blu-ray &amp; 4K Movie Collection App for Android</title>
+<meta name="description" content="DiscVault is a free, local-first movie collection app for Android. Scan barcodes to catalog your DVD, Blu-ray & 4K discs, track every edition, and never double-buy." />
+<meta name="keywords" content="DVD collection app, Blu-ray collection app, 4K UHD collection, movie collection app, catalog movie collection, barcode scanner movie app, CLZ alternative" />
 <meta name="theme-color" content="#0c0d10" />
 <link rel="canonical" href="https://discvault.us/" />
 <link rel="icon" href="./favicon.png" />
+<link rel="manifest" href="./site.webmanifest" />
 
 <!-- Social / Reddit link preview -->
 <meta property="og:type" content="website" />
@@ -21,6 +23,42 @@
 <meta name="twitter:image" content="https://discvault.us/og-image.png" />
 
 <link rel="stylesheet" href="./styles.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://discvault.us/#org",
+      "name": "DiscVault",
+      "url": "https://discvault.us/",
+      "logo": "https://discvault.us/icon.png",
+      "email": "tex@discvault.us"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://discvault.us/#website",
+      "url": "https://discvault.us/",
+      "name": "DiscVault",
+      "description": "A local-first Android app to catalog your DVD, Blu-ray and 4K movie collection.",
+      "publisher": { "@id": "https://discvault.us/#org" }
+    },
+    {
+      "@type": "MobileApplication",
+      "name": "DiscVault",
+      "operatingSystem": "Android",
+      "applicationCategory": "UtilitiesApplication",
+      "url": "https://discvault.us/",
+      "downloadUrl": "https://discvault.us/download",
+      "image": "https://discvault.us/og-image.png",
+      "description": "DiscVault is a free, local-first movie collection app for Android. Scan barcodes to catalog your DVD, Blu-ray and 4K discs, track every edition and copy, never double-buy, and decide what to watch next.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "publisher": { "@id": "https://discvault.us/#org" }
+    }
+  ]
+}
+</script>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DBCGHSKD1Q"></script>
@@ -41,6 +79,7 @@
       <a class="link" href="#features">Features</a>
       <a class="link" href="#pricing">Pricing</a>
       <a class="link" href="#install">Install</a>
+      <a class="link" href="/faq">FAQ</a>
       <a class="btn btn-accent" href="https://discvault.us/download">Download</a>
     </nav>
   </div>
@@ -159,6 +198,34 @@
     </div>
   </section>
 
+  <!-- FAQ -->
+  <section id="faq" style="background:#0a0b0e;">
+    <div class="wrap">
+      <p class="eyebrow">Questions</p>
+      <h2 class="section-title">DiscVault, answered</h2>
+      <p class="section-sub">The quick version — see the <a href="/faq" style="color:var(--accent)">full FAQ</a> for more.</p>
+      <div class="faq">
+        <details open>
+          <summary>Is DiscVault free?</summary>
+          <div class="a">Yes — free for up to 100 movies with every feature included. An optional Pro tier removes the limit for larger libraries.</div>
+        </details>
+        <details>
+          <summary>Is my collection data private?</summary>
+          <div class="a">Yes. DiscVault is local-first: your collection lives only on your device, with no account and no in-app tracking. See the <a href="/privacy">Privacy Policy</a>.</div>
+        </details>
+        <details>
+          <summary>Can I import from CLZ?</summary>
+          <div class="a">Yes — import a CLZ CSV to bring your existing collection in without re-scanning. More in the <a href="/clz-alternative">CLZ alternative guide</a>.</div>
+        </details>
+        <details>
+          <summary>What platforms are supported?</summary>
+          <div class="a">DiscVault is an Android app (sideloaded APK, also on the Solana dApp Store). No iOS version yet.</div>
+        </details>
+      </div>
+      <p style="margin-top:24px;">New to this? Read <a href="/how-to-catalog-movie-collection" style="color:var(--accent)">how to catalog your movie collection</a> or compare the <a href="/best-dvd-collection-app" style="color:var(--accent)">best DVD collection apps</a>.</p>
+    </div>
+  </section>
+
   <!-- FEEDBACK -->
   <section>
     <div class="wrap">
@@ -179,7 +246,11 @@
       <div>Local-first · your collection never leaves your device.</div>
       <div class="foot-links" style="margin-top:14px;">
         <a href="#features">Features</a>
-        <a href="#install">Download</a>
+        <a href="/download">Download</a>
+        <a href="/faq">FAQ</a>
+        <a href="/best-dvd-collection-app">Collection apps</a>
+        <a href="/how-to-catalog-movie-collection">How to catalog</a>
+        <a href="/clz-alternative">CLZ alternative</a>
         <a href="./privacy.html">Privacy</a>
         <a href="./terms.html">Terms</a>
         <a href="mailto:tex@discvault.us">Contact</a>

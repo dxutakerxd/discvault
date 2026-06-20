@@ -1,0 +1,14 @@
+{
+  "name": "DiscVault — DVD, Blu-ray & 4K Collection App",
+  "short_name": "DiscVault",
+  "description": "A local-first Android app to catalog and track your DVD, Blu-ray and 4K movie collection.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0c0d10",
+  "theme_color": "#0c0d10",
+  "icons": [
+    { "src": "/icon.png", "sizes": "any", "type": "image/png", "purpose": "any" },
+    { "src": "/favicon.png", "sizes": "any", "type": "image/png", "purpose": "maskable" }
+  ]
+}

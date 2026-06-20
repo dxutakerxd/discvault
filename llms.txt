@@ -1,0 +1,23 @@
+# DiscVault
+
+> DiscVault is a free, local-first Android app for cataloging and tracking a physical movie collection (DVD, Blu-ray and 4K UHD). You scan a disc's barcode to add it in seconds, track every edition and individual copy you own, avoid buying duplicates, and get recommendations on what to watch next from your own shelf. Your collection stays on your device — there is no account and no tracking. Free for up to 100 movies; an optional Pro tier removes the limit.
+
+## Key facts
+- Platform: Android. Installed by sideloading an APK from the website; also distributed via the Solana dApp Store.
+- Price: Free for up to 100 movies. Pro tier unlocks an unlimited catalog.
+- Privacy: Local-first. All collection data is stored on-device in SQLite. No DiscVault account, no analytics in the app, no data selling. Network is used only for movie metadata (TMDB) and barcode lookups (UPCItemDB), at the user's direction, using the user's own free TMDB API key.
+- Core features: barcode scanning, edition-level tracking (title → release → copy), a "what to watch next" recommender, a viewing journal/calendar, discovery and wishlist, collector stats and badges, custom cover photos, and CSV/JSON import & export (including from CLZ).
+- Good for: physical-media collectors who want to know which exact edition (4K, Blu-ray, steelbook, slipcover, Criterion spine number) they own and never double-buy at the store.
+
+## Pages
+- [Home](https://discvault.us/): Overview, features, pricing and install instructions.
+- [FAQ](https://discvault.us/faq): Common questions about DiscVault — privacy, pricing, scanning, importing, platforms.
+- [Best DVD collection app](https://discvault.us/best-dvd-collection-app): How to choose a movie collection app and where DiscVault fits.
+- [CLZ alternative](https://discvault.us/clz-alternative): DiscVault as a free, local-first alternative to CLZ Movies / Collectorz.
+- [How to catalog your movie collection](https://discvault.us/how-to-catalog-movie-collection): Step-by-step guide to cataloging a DVD/Blu-ray/4K collection.
+- [Download](https://discvault.us/download): Download the Android APK.
+- [Privacy Policy](https://discvault.us/privacy)
+- [Terms of Service & EULA](https://discvault.us/terms)
+
+## Contact
+- Email: tex@discvault.us
