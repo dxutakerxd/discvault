@@ -1,267 +1,463 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>DiscVault — DVD, Blu-ray &amp; 4K Movie Collection App for Android</title>
-<meta name="description" content="DiscVault is a free, local-first movie collection app for Android. Scan barcodes to catalog your DVD, Blu-ray & 4K discs, track every edition, and never double-buy." />
-<meta name="keywords" content="DVD collection app, Blu-ray collection app, 4K UHD collection, movie collection app, catalog movie collection, barcode scanner movie app, CLZ alternative" />
-<meta name="theme-color" content="#0c0d10" />
-<link rel="canonical" href="https://discvault.us/" />
-<link rel="icon" href="./favicon.png" />
-<link rel="manifest" href="./site.webmanifest" />
-
-<!-- Social / Reddit link preview -->
-<meta property="og:type" content="website" />
-<meta property="og:title" content="DiscVault — your physical movie collection, organized" />
-<meta property="og:description" content="Scan, catalog and track your DVD/Blu-ray/4K shelf down to the steelbook. Local-first, no account. Free for 100 movies." />
-<meta property="og:url" content="https://discvault.us/" />
-<meta property="og:image" content="https://discvault.us/og-image.png" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="DiscVault — your physical movie collection, organized" />
-<meta name="twitter:description" content="Scan, catalog and track your DVD/Blu-ray/4K shelf. Local-first, no account." />
-<meta name="twitter:image" content="https://discvault.us/og-image.png" />
-
-<link rel="stylesheet" href="./styles.css" />
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://discvault.us/#org",
-      "name": "DiscVault",
-      "url": "https://discvault.us/",
-      "logo": "https://discvault.us/icon.png",
-      "email": "tex@discvault.us"
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://discvault.us/#website",
-      "url": "https://discvault.us/",
-      "name": "DiscVault",
-      "description": "A local-first Android app to catalog your DVD, Blu-ray and 4K movie collection.",
-      "publisher": { "@id": "https://discvault.us/#org" }
-    },
-    {
-      "@type": "MobileApplication",
-      "name": "DiscVault",
-      "operatingSystem": "Android",
-      "applicationCategory": "UtilitiesApplication",
-      "url": "https://discvault.us/",
-      "downloadUrl": "https://discvault.us/download",
-      "image": "https://discvault.us/og-image.png",
-      "description": "DiscVault is a free, local-first movie collection app for Android. Scan barcodes to catalog your DVD, Blu-ray and 4K discs, track every edition and copy, never double-buy, and decide what to watch next.",
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-      "publisher": { "@id": "https://discvault.us/#org" }
-    }
-  ]
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/css/index.Gnga_XIz.css" data-rsc-css-href="/_next/static/css/index.Gnga_XIz.css" data-precedence="vite-rsc/importer-resources"/><link rel="modulepreload" fetchPriority="low" href="/_next/static/chunks/index-Bkkb5UTK.js"/><script src="/_next/static/chunks/rolldown-runtime-C60lm6uB.js" type="module" async=""></script><script src="/_next/static/chunks/framework-D_rUT4EX.js" type="module" async=""></script><link rel="modulepreload" href="/_next/static/chunks/layout-segment-context-DjfIZkYs.js" crossorigin=""/><link rel="modulepreload" href="/_next/static/chunks/page-DuhxifW2.js" crossorigin=""/><link rel="modulepreload" href="/_next/static/chunks/case-fallback-1lrygkxR.js" crossorigin=""/><title>DiscVault — Some things are worth holding on to</title><meta name="description" content="Catalog your DVD, Blu-ray and 4K collection, choose what to watch and keep your movie history local."/><link rel="icon" href="/brand/favicon-32.png" type="image/png" sizes="32x32"/><link rel="icon" href="/brand/discvault-monogram-512.png" type="image/png" sizes="512x512"/><link rel="apple-touch-icon" href="/brand/apple-touch-icon.png" type="image/png" sizes="180x180"/><script>Object.assign(((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}),{params:{},nav:{"pathname":"/","searchParams":[]}})</script><link rel="modulepreload" href="/_next/static/chunks/index-Bkkb5UTK.js" />
+<link rel="preload" href="/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-fe99e303.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-e99b45a2.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/_next/static/_vinext_fonts/manrope-76eca2803f7f/manrope-81401990.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/_next/static/_vinext_fonts/ibm-plex-mono-249675d2ada6/ibm-plex-mono-d7731959.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/_next/static/_vinext_fonts/ibm-plex-mono-249675d2ada6/ibm-plex-mono-8d0aead6.woff2" as="font" type="font/woff2" crossorigin />
+<style data-vinext-fonts>/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-7d0fab25.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
-</script>
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DBCGHSKD1Q"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-bd3fa9fe.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-5f813686.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-0365c557.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-fe99e303.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-7d0fab25.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-bd3fa9fe.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-5f813686.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-0365c557.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-fe99e303.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-7d0fab25.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-bd3fa9fe.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-5f813686.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-0365c557.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-fe99e303.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-dd44b623.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-44d82aa9.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-7f5a19db.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-21114939.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-e99b45a2.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-dd44b623.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-44d82aa9.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-7f5a19db.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-21114939.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-e99b45a2.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-dd44b623.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-44d82aa9.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-7f5a19db.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-21114939.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/cormorant-garamond-a9167bcec36d/cormorant-garamond-e99b45a2.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
-  gtag('config', 'G-DBCGHSKD1Q');
-</script>
+@font-face {
+  font-family: 'Cormorant Garamond Fallback';
+  src: local("Times New Roman");
+  ascent-override: 95.27%;
+  descent-override: 29.59%;
+  line-gap-override: 0.00%;
+  size-adjust: 96.98%;
+}
 
-<body>
+.__font_cormorant_garamond_02r7y5q { font-family: 'Cormorant Garamond', 'Cormorant Garamond Fallback'; }
 
-<header>
-  <div class="wrap">
-    <a class="brand" href="#top"><img src="./icon.png" alt="DiscVault icon" /> DiscVault</a>
-    <nav class="nav">
-      <a class="link" href="#features">Features</a>
-      <a class="link" href="#pricing">Pricing</a>
-      <a class="link" href="#install">Install</a>
-      <a class="link" href="/faq">FAQ</a>
-      <a class="btn btn-accent" href="https://discvault.us/download">Download</a>
-    </nav>
-  </div>
-</header>
+.__variable_cormorant_garamond_02r7y5q { --font-display: 'Cormorant Garamond', 'Cormorant Garamond Fallback'; }
 
-<main id="top">
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/manrope-76eca2803f7f/manrope-37facb2a.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/manrope-76eca2803f7f/manrope-c9a5f13c.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/manrope-76eca2803f7f/manrope-f00fa027.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/manrope-76eca2803f7f/manrope-bd6e7fdc.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/manrope-76eca2803f7f/manrope-76dcfc73.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/manrope-76eca2803f7f/manrope-81401990.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="wrap">
-      <img class="hero-icon" src="./icon.png" alt="DiscVault" />
-      <h1>Your shelf, finally organized.</h1>
-      <p class="tagline">The collector-grade vault for your DVD, Blu-ray and 4K collection — every edition, steelbook and spine number in your pocket.</p>
-      <p class="lede">Scan a barcode and DiscVault catalogs the disc in seconds. Track what you own, never double-buy at the store, and always know what to watch next.</p>
-      <div class="hero-cta">
-        <a class="btn btn-accent btn-lg" href="https://discvault.us/download">⬇ Download the beta (APK)</a>
-        <a class="btn btn-ghost btn-lg" href="#install">How to install</a>
-      </div>
-      <div class="trust">
-        <span class="dot-accent">Local-first</span>
-        <span class="dot-accent">No account needed</span>
-        <span class="dot-accent">Your data stays on your device</span>
-      </div>
-      <div class="formats">
-        <span class="chip uhd">4K UHD</span>
-        <span class="chip bd">Blu-ray</span>
-        <span class="chip dvd">DVD</span>
-      </div>
-    </div>
-  </section>
+@font-face {
+  font-family: 'Manrope Fallback';
+  src: local("Arial");
+  ascent-override: 103.31%;
+  descent-override: 29.07%;
+  line-gap-override: 0.00%;
+  size-adjust: 103.19%;
+}
 
-  <!-- FEATURES -->
-  <section id="features">
-    <div class="wrap">
-      <p class="eyebrow">Everything a collector wants</p>
-      <h2 class="section-title">Built for people who care which edition they own</h2>
-      <p class="section-sub">Not a spreadsheet with cover art — a hub for the hobby.</p>
-      <div class="grid">
-        <div class="card"><div class="ic">📷</div><h3>Scan &amp; catalog</h3><p>Point your camera at a barcode and DiscVault pulls the cover, cast and runtime, then files it automatically.</p></div>
-        <div class="card"><div class="ic">💿</div><h3>Edition-level tracking</h3><p>Title → Release → Copy. 4K vs Blu-ray, steelbooks, slipcovers, Criterion spine numbers, and the exact copy on your shelf.</p></div>
-        <div class="card"><div class="ic">🎲</div><h3>Never wonder what to watch</h3><p>A recommender that pulls from your own shelf by mood, runtime and format — or just hit Surprise me.</p></div>
-        <div class="card"><div class="ic">📅</div><h3>Journal your viewings</h3><p>A calendar of what you've actually spun, with posters, rewatch tracking and a year in review.</p></div>
-        <div class="card"><div class="ic">🧭</div><h3>Discover &amp; wishlist</h3><p>Browse trending films, bookmark the editions you're hunting, and convert them to owned when they arrive.</p></div>
-        <div class="card"><div class="ic">🏆</div><h3>Stats &amp; collector badges</h3><p>Counts by format, decade, director and label — plus collector badges and a cheeky Shelf of Shame.</p></div>
-        <div class="card"><div class="ic">🖼️</div><h3>Your own covers</h3><p>Photograph your actual cases and choose whether to show your shot or the database art.</p></div>
-        <div class="card"><div class="ic">📦</div><h3>Import &amp; export</h3><p>Bring a collection in from a CLZ CSV, and export CSV / JSON backups anytime. Your data, portable.</p></div>
-      </div>
-    </div>
-  </section>
+.__font_manrope_0lv6qco { font-family: 'Manrope', 'Manrope Fallback'; font-style: normal; }
 
-  <!-- SCREENSHOTS -->
-  <section id="screens" style="background:#0a0b0e;">
-    <div class="wrap">
-      <p class="eyebrow">A look inside</p>
-      <h2 class="section-title">Designed to feel like home cinema</h2>
-      <p class="section-sub">Dark, poster-forward, and fast.</p>
-      <div class="shots">
-        <div class="shot"><img src="./screenshots/collection.jpg" alt="Your collection grid" loading="lazy" /></div>
-        <div class="shot"><img src="./screenshots/scan.jpg" alt="Scanning a disc barcode" loading="lazy" /></div>
-        <div class="shot"><img src="./screenshots/watch_next.jpg" alt="Watch Next recommendations" loading="lazy" /></div>
-        <div class="shot"><img src="./screenshots/journal.jpg" alt="Journal watch calendar" loading="lazy" /></div>
-        <div class="shot"><img src="./screenshots/discover.jpg" alt="Discover trending films" loading="lazy" /></div>
-        <div class="shot"><img src="./screenshots/profile.jpg" alt="Profile, stats and badges" loading="lazy" /></div>
-      </div>
-    </div>
-  </section>
+.__variable_manrope_0lv6qco { --font-body: 'Manrope', 'Manrope Fallback'; }
 
-  <!-- PRICING -->
-  <section id="pricing">
-    <div class="wrap">
-      <p class="eyebrow" style="text-align:center;">Simple &amp; fair</p>
-      <h2 class="section-title" style="text-align:center;">Free to start. Pro when you outgrow it.</h2>
-      <p class="section-sub" style="text-align:center;">The free tier is a real app, not a trial.</p>
-      <div class="tiers">
-        <div class="tier">
-          <h3>Free</h3>
-          <div class="price">100 <small>movies</small></div>
-          <ul>
-            <li>Every feature included</li>
-            <li>Unlimited editions &amp; copies of movies you own</li>
-            <li>Scanning, journal, stats &amp; badges</li>
-            <li>CSV / JSON import &amp; export</li>
-            <li>100% on-device, no account</li>
-          </ul>
-        </div>
-        <div class="tier pro">
-          <h3>Pro</h3>
-          <div class="price">Unlimited <small>movies</small></div>
-          <ul>
-            <li>No catalog limit</li>
-            <li>Everything in Free</li>
-            <li>Cloud sync &amp; backup <em>(coming)</em></li>
-            <li>Collection value &amp; insurance export <em>(coming)</em></li>
-          </ul>
-          <p class="note">Beta tester with a code? Unlock Pro in <strong>Settings → Redeem a beta code</strong>.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/ibm-plex-mono-249675d2ada6/ibm-plex-mono-3a6be21f.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/ibm-plex-mono-249675d2ada6/ibm-plex-mono-c969eaac.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/ibm-plex-mono-249675d2ada6/ibm-plex-mono-ef6e627b.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/ibm-plex-mono-249675d2ada6/ibm-plex-mono-9994c10a.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/ibm-plex-mono-249675d2ada6/ibm-plex-mono-d7731959.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/ibm-plex-mono-249675d2ada6/ibm-plex-mono-1321c702.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/ibm-plex-mono-249675d2ada6/ibm-plex-mono-b98a4523.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/ibm-plex-mono-249675d2ada6/ibm-plex-mono-d9a6454f.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/ibm-plex-mono-249675d2ada6/ibm-plex-mono-60d1ee22.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/_vinext_fonts/ibm-plex-mono-249675d2ada6/ibm-plex-mono-8d0aead6.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
-  <!-- INSTALL -->
-  <section id="install" style="background:#0a0b0e;">
-    <div class="wrap">
-      <p class="eyebrow">Sideloading the beta</p>
-      <h2 class="section-title">Up and running in two minutes</h2>
-      <p class="section-sub">DiscVault isn't on the Play Store yet — it installs straight from the APK.</p>
-      <div class="steps">
-        <div class="step"><div class="num">1</div><h3>Download the APK</h3><p>Tap the download button on your Android phone.</p></div>
-        <div class="step"><div class="num">2</div><h3>Allow the install</h3><p>When Android asks, allow "install unknown apps" for your browser, then confirm.</p></div>
-        <div class="step"><div class="num">3</div><h3>Open DiscVault</h3><p>A quick first-run setup walks you through the essentials.</p></div>
-        <div class="step"><div class="num">4</div><h3>Add a free TMDB key</h3><p>DiscVault uses TMDB for covers &amp; details. You paste your own free key — we never bundle one. <a href="https://www.themoviedb.org/settings/api" style="color:var(--accent)">Get a key →</a></p></div>
-      </div>
-      <div style="text-align:center;margin-top:32px;">
-        <a class="btn btn-accent btn-lg" href="https://discvault.us/download">⬇ Download the beta (APK)</a>
-      </div>
-    </div>
-  </section>
+@font-face {
+  font-family: 'IBM Plex Mono Fallback';
+  src: local("Arial");
+  ascent-override: 76.16%;
+  descent-override: 20.43%;
+  line-gap-override: 0.00%;
+  size-adjust: 134.59%;
+}
 
-  <!-- FAQ -->
-  <section id="faq" style="background:#0a0b0e;">
-    <div class="wrap">
-      <p class="eyebrow">Questions</p>
-      <h2 class="section-title">DiscVault, answered</h2>
-      <p class="section-sub">The quick version — see the <a href="/faq" style="color:var(--accent)">full FAQ</a> for more.</p>
-      <div class="faq">
-        <details open>
-          <summary>Is DiscVault free?</summary>
-          <div class="a">Yes — free for up to 100 movies with every feature included. An optional Pro tier removes the limit for larger libraries.</div>
-        </details>
-        <details>
-          <summary>Is my collection data private?</summary>
-          <div class="a">Yes. DiscVault is local-first: your collection lives only on your device, with no account and no in-app tracking. See the <a href="/privacy">Privacy Policy</a>.</div>
-        </details>
-        <details>
-          <summary>Can I import from CLZ?</summary>
-          <div class="a">Yes — import a CLZ CSV to bring your existing collection in without re-scanning. More in the <a href="/clz-alternative">CLZ alternative guide</a>.</div>
-        </details>
-        <details>
-          <summary>What platforms are supported?</summary>
-          <div class="a">DiscVault is an Android app (sideloaded APK, also on the Solana dApp Store). No iOS version yet.</div>
-        </details>
-      </div>
-      <p style="margin-top:24px;">New to this? Read <a href="/how-to-catalog-movie-collection" style="color:var(--accent)">how to catalog your movie collection</a> or compare the <a href="/best-dvd-collection-app" style="color:var(--accent)">best DVD collection apps</a>.</p>
-    </div>
-  </section>
+.__font_ibm_plex_mono_15tc0xw { font-family: 'IBM Plex Mono', 'IBM Plex Mono Fallback'; font-style: normal; }
 
-  <!-- FEEDBACK -->
-  <section>
-    <div class="wrap">
-      <div class="callout">
-        <h2>This is an early beta</h2>
-        <p>You're one of the first to try DiscVault. Found a bug, missing an edition field, or have an idea? I'd genuinely love to hear it.</p>
-        <a class="btn btn-ghost" href="mailto:tex@discvault.us?subject=DiscVault%20beta%20feedback">Share feedback</a>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <div class="wrap">
-    <div>
-      <div class="brand" style="margin-bottom:10px;"><img src="./icon.png" alt="" style="width:26px;height:26px;border-radius:7px;" /> DiscVault</div>
-      <div>Local-first · your collection never leaves your device.</div>
-      <div class="foot-links" style="margin-top:14px;">
-        <a href="#features">Features</a>
-        <a href="/download">Download</a>
-        <a href="/faq">FAQ</a>
-        <a href="/best-dvd-collection-app">Collection apps</a>
-        <a href="/how-to-catalog-movie-collection">How to catalog</a>
-        <a href="/clz-alternative">CLZ alternative</a>
-        <a href="./privacy.html">Privacy</a>
-        <a href="./terms.html">Terms</a>
-        <a href="mailto:tex@discvault.us">Contact</a>
-      </div>
-    </div>
-    <div class="tmdb-attr">
-      <img src="./tmdb.svg" alt="TMDB" />
-      <p>This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
-    </div>
-  </div>
-</footer>
-
-</body>
-</html>
+.__variable_ibm_plex_mono_15tc0xw { --font-utility: 'IBM Plex Mono', 'IBM Plex Mono Fallback'; }
+</style>
+</head><body class="__variable_cormorant_garamond_02r7y5q __variable_manrope_0lv6qco __variable_ibm_plex_mono_15tc0xw"><main id="top"><a class="skip-link" href="#collection">Skip to the app tour</a><header class="topbar"><a class="brand" href="#top"><img src="/brand/discvault-monogram.webp" width="40" height="40" alt=""/><span>DiscVault<span class="brand-period">.</span></span></a><nav aria-label="Main navigation"><a href="#collection">The app</a><a href="#screening-room">The screening room</a></nav><a class="button download-link nav-download" href="https://discvault.us/download"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download" aria-hidden="true"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg>Download APK<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></header><section class="hero" aria-labelledby="hero-title"><img class="hero-backdrop" src="/screening-room.jpg" alt="" fetchPriority="high"/><div class="hero-wash"></div><div class="hero-topline"><span><i></i> THE PERSONAL PICTURE HOUSE</span><span>FOR THE LOVE OF PHYSICAL MEDIA</span></div><div class="hero-layout"><div class="hero-copy"><p class="eyebrow">Your films. Beautifully kept.</p><h1 id="hero-title">Some things<br/>are worth<br/><em>holding on to.</em></h1><p class="hero-description">The shelf you built. The editions you hunted down. Bring your DVD, Blu-ray and 4K collection to life with DiscVault.</p><div class="hero-actions"><a class="button download-link " href="https://discvault.us/download"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download" aria-hidden="true"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg>Download APK<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a class="text-link" href="#collection">Step inside <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down" aria-hidden="true"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg></a></div><p class="download-note">Android beta <span>·</span> APK download</p></div><div class="hero-object" id="case-studio"><div class="object-caption"><span>THE COLLECTOR’S CUT</span><span>01 / INTERACTIVE PREVIEW</span></div><div class="case-intro"><img src="/media/collector-case.webp" alt="A partially opened DiscVault case with photographed True Romance cover artwork" width="750" height="1000" fetchPriority="high"/><button class="experience-button"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-horizontal" aria-hidden="true"><path d="m18 8 4 4-4 4"></path><path d="M2 12h20"></path><path d="m6 8-4 4 4 4"></path></svg><span>Pick up a case<small>Open it. Turn it. Make it yours.</small></span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></button></div></div></div><div class="hero-bottom"><span>BUILT FOR COLLECTORS, NOT ALGORITHMS.</span><a href="#collection">THE FEATURE PRESENTATION <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down" aria-hidden="true"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg></a></div></section><div class="format-bar" aria-label="Supported physical media"><span>A HOME FOR EVERY EDITION</span><b>4K ULTRA HD</b><b class="bluray-word">Blu-ray</b><b>DVD</b><span>THE COLLECTION IS YOURS.</span></div><section class="app-section section-wrap" id="collection"><div class="section-intro"><p class="eyebrow">01 — A shelf with a soul</p><h2>Your collection.<br/><em>With the character intact.</em></h2><p>More than a list of titles. A place for the details that make your collection yours.</p></div><div data-orientation="horizontal" data-activation-direction="none" data-slot="tabs" class="group/tabs flex gap-2 data-horizontal:flex-col app-tour"><div data-orientation="horizontal" data-activation-direction="none" role="tablist" data-slot="tabs-list" data-variant="default" aria-label="Explore the updated app" class="group/tabs-list inline-flex w-fit items-center justify-center rounded-lg p-[3px] text-muted-foreground group-data-horizontal/tabs:h-8 group-data-vertical/tabs:h-fit group-data-vertical/tabs:flex-col data-[variant=line]:rounded-none bg-muted tour-tabs"><button type="button" data-active="" data-orientation="horizontal" data-activation-direction="none" aria-disabled="false" tabindex="-1" role="tab" aria-selected="true" id="base-ui-_R_1cli_" data-composite-item-active="" data-slot="tabs-trigger" class="relative inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-1.5 py-0.5 text-sm font-medium whitespace-nowrap text-foreground/60 transition-all group-data-vertical/tabs:w-full group-data-vertical/tabs:justify-start hover:text-foreground focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:outline-1 focus-visible:outline-ring disabled:pointer-events-none disabled:opacity-50 has-data-[icon=inline-end]:pr-1 has-data-[icon=inline-start]:pl-1 aria-disabled:pointer-events-none aria-disabled:opacity-50 dark:text-muted-foreground dark:hover:text-foreground group-data-[variant=default]/tabs-list:data-active:shadow-sm group-data-[variant=line]/tabs-list:data-active:shadow-none [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 group-data-[variant=line]/tabs-list:bg-transparent group-data-[variant=line]/tabs-list:data-active:bg-transparent dark:group-data-[variant=line]/tabs-list:data-active:border-transparent dark:group-data-[variant=line]/tabs-list:data-active:bg-transparent data-active:bg-background data-active:text-foreground dark:data-active:border-input dark:data-active:bg-input/30 dark:data-active:text-foreground after:absolute after:bg-foreground after:opacity-0 after:transition-opacity group-data-horizontal/tabs:after:inset-x-0 group-data-horizontal/tabs:after:bottom-[-5px] group-data-horizontal/tabs:after:h-0.5 group-data-vertical/tabs:after:inset-y-0 group-data-vertical/tabs:after:-right-1 group-data-vertical/tabs:after:w-0.5 group-data-[variant=line]/tabs-list:data-active:after:opacity-100"><span>0<!-- -->1</span>The shelf</button><button type="button" data-orientation="horizontal" data-activation-direction="none" aria-disabled="false" tabindex="-1" role="tab" aria-selected="false" id="base-ui-_R_2cli_" data-slot="tabs-trigger" class="relative inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-1.5 py-0.5 text-sm font-medium whitespace-nowrap text-foreground/60 transition-all group-data-vertical/tabs:w-full group-data-vertical/tabs:justify-start hover:text-foreground focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:outline-1 focus-visible:outline-ring disabled:pointer-events-none disabled:opacity-50 has-data-[icon=inline-end]:pr-1 has-data-[icon=inline-start]:pl-1 aria-disabled:pointer-events-none aria-disabled:opacity-50 dark:text-muted-foreground dark:hover:text-foreground group-data-[variant=default]/tabs-list:data-active:shadow-sm group-data-[variant=line]/tabs-list:data-active:shadow-none [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 group-data-[variant=line]/tabs-list:bg-transparent group-data-[variant=line]/tabs-list:data-active:bg-transparent dark:group-data-[variant=line]/tabs-list:data-active:border-transparent dark:group-data-[variant=line]/tabs-list:data-active:bg-transparent data-active:bg-background data-active:text-foreground dark:data-active:border-input dark:data-active:bg-input/30 dark:data-active:text-foreground after:absolute after:bg-foreground after:opacity-0 after:transition-opacity group-data-horizontal/tabs:after:inset-x-0 group-data-horizontal/tabs:after:bottom-[-5px] group-data-horizontal/tabs:after:h-0.5 group-data-vertical/tabs:after:inset-y-0 group-data-vertical/tabs:after:-right-1 group-data-vertical/tabs:after:w-0.5 group-data-[variant=line]/tabs-list:data-active:after:opacity-100"><span>0<!-- -->2</span>The collection</button><button type="button" data-orientation="horizontal" data-activation-direction="none" aria-disabled="false" tabindex="-1" role="tab" aria-selected="false" id="base-ui-_R_3cli_" data-slot="tabs-trigger" class="relative inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-1.5 py-0.5 text-sm font-medium whitespace-nowrap text-foreground/60 transition-all group-data-vertical/tabs:w-full group-data-vertical/tabs:justify-start hover:text-foreground focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:outline-1 focus-visible:outline-ring disabled:pointer-events-none disabled:opacity-50 has-data-[icon=inline-end]:pr-1 has-data-[icon=inline-start]:pl-1 aria-disabled:pointer-events-none aria-disabled:opacity-50 dark:text-muted-foreground dark:hover:text-foreground group-data-[variant=default]/tabs-list:data-active:shadow-sm group-data-[variant=line]/tabs-list:data-active:shadow-none [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 group-data-[variant=line]/tabs-list:bg-transparent group-data-[variant=line]/tabs-list:data-active:bg-transparent dark:group-data-[variant=line]/tabs-list:data-active:border-transparent dark:group-data-[variant=line]/tabs-list:data-active:bg-transparent data-active:bg-background data-active:text-foreground dark:data-active:border-input dark:data-active:bg-input/30 dark:data-active:text-foreground after:absolute after:bg-foreground after:opacity-0 after:transition-opacity group-data-horizontal/tabs:after:inset-x-0 group-data-horizontal/tabs:after:bottom-[-5px] group-data-horizontal/tabs:after:h-0.5 group-data-vertical/tabs:after:inset-y-0 group-data-vertical/tabs:after:-right-1 group-data-vertical/tabs:after:w-0.5 group-data-[variant=line]/tabs-list:data-active:after:opacity-100"><span>0<!-- -->3</span>Tonight’s feature</button></div><div data-orientation="horizontal" data-activation-direction="none" id="base-ui-_R_1kli_" role="tabpanel" tabindex="0" data-index="-1" data-slot="tabs-content" class="flex-1 text-sm outline-none tour-panel"><div class="tour-copy"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-film" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M7 3v18"></path><path d="M3 7.5h4"></path><path d="M3 12h18"></path><path d="M3 16.5h4"></path><path d="M17 3v18"></path><path d="M17 7.5h4"></path><path d="M17 16.5h4"></path></svg><h3>A little more physical.</h3><p>Your photographed spines. Your special editions. A shelf that feels like the one at home—with every film in reach.</p><div class="tour-note">Spine view · Custom artwork · 3D cases</div><a class="text-link" href="#download">Take your collection with you <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></div><div class="phone-stage"><span class="stage-word" aria-hidden="true">KEEP.</span><button type="button" tabindex="0" data-base-ui-click-trigger="" id="base-ui-_R_1ulkli_" aria-haspopup="dialog" aria-expanded="false" data-slot="dialog-trigger" aria-label="Enlarge The shelf screenshot" class="phone"><img src="/media/app-shelf.webp" width="720" height="1470" alt="Current DiscVault Android app: The shelf" loading="lazy"/></button><span class="screen-caption">ACTUAL APP / TAP TO ENLARGE</span></div></div></div></section><section class="ritual section-wrap" aria-label="Collection features"><div class="ritual-title"><p class="eyebrow">The entire movie-night ritual</p><h2>From first scan<br/>to <em>one more watch.</em></h2></div><div class="ritual-grid"><article><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scan-line" aria-hidden="true"><path d="M3 7V5a2 2 0 0 1 2-2h2"></path><path d="M17 3h2a2 2 0 0 1 2 2v2"></path><path d="M21 17v2a2 2 0 0 1-2 2h-2"></path><path d="M7 21H5a2 2 0 0 1-2-2v-2"></path><path d="M7 12h10"></path></svg><span>01 / ADD</span><h3>One scan. On your shelf.</h3><p>Scan a barcode, confirm the release, and give your latest find a home.</p></article><article><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hard-drive" aria-hidden="true"><path d="M10 16h.01"></path><path d="M2.212 11.577a2 2 0 0 0-.212.896V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5.527a2 2 0 0 0-.212-.896L18.55 5.11A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path><path d="M21.946 12.013H2.054"></path><path d="M6 16h.01"></path></svg><span>02 / KEEP</span><h3>Yours, even offline.</h3><p>Your collection stays on your device. Browse what you own wherever you are.</p></article><article><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shuffle" aria-hidden="true"><path d="m18 14 4 4-4 4"></path><path d="m18 2 4 4-4 4"></path><path d="M2 18h1.973a4 4 0 0 0 3.3-1.7l5.454-8.6a4 4 0 0 1 3.3-1.7H22"></path><path d="M2 6h1.972a4 4 0 0 1 3.6 2.2"></path><path d="M22 18h-6.041a4 4 0 0 1-3.3-1.8l-.359-.45"></path></svg><span>03 / CHOOSE</span><h3>Find tonight’s film.</h3><p>Filter your collection or let DiscVault surprise you with your next watch.</p></article><article><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days" aria-hidden="true"><path d="M8 2v3"></path><path d="M16 2v3"></path><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path><path d="M8 13h.01"></path><path d="M12 13h.01"></path><path d="M16 13h.01"></path><path d="M8 17h.01"></path><path d="M12 17h.01"></path><path d="M16 17h.01"></path></svg><span>04 / REMEMBER</span><h3>Keep the memories.</h3><p>Log watches and rewatches. Your own history of nights at the movies.</p></article></div></section><section class="theater-runway" id="screening-room" aria-label="The screening room"><div class="screening-section" data-light-stage="0" style="--house-brightness:0.85"><img src="/screening-room.jpg" alt="A warmly lit private cinema with leather seats and a large projection screen" loading="lazy"/><div class="screening-shade"></div><div class="screening-copy"><p class="eyebrow">02 — Make a night of it</p><h2>The best seat<br/>is <em>already yours.</em></h2><p>Explore your films in the screening room. Because choosing what to watch should feel like part of the evening.</p><div class="house-cues"><span>Doors open</span><div aria-hidden="true"><i data-on="true"></i><i data-on="true"></i><i data-on="true"></i><i data-on="true"></i><i data-on="true"></i></div></div><p class="scroll-instruction">Scroll down to dim the lights. Scroll up to bring them back.</p><button class="outline-button" aria-pressed="false">Dim the house lights<span aria-hidden="true">◉</span></button></div><div class="screening-app"><img src="/screening-room-app.jpg" alt="DiscVault’s in-app screening room" loading="lazy"/><span>THE SCREENING ROOM / IN THE APP</span></div></div></section><section class="download-section section-wrap" id="download"><div class="ticket"><div class="ticket-stub"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ticket" aria-hidden="true"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path><path d="M13 5v2"></path><path d="M13 17v2"></path><path d="M13 11v2"></path></svg><span>ADMIT ONE</span><small>YOUR PERSONAL<br/>PICTURE HOUSE</small></div><div class="ticket-main"><p class="eyebrow">Your next great watch is already on your shelf.</p><h2>Let’s give it<br/><em>a proper home.</em></h2><a class="button download-link " href="https://discvault.us/download"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download" aria-hidden="true"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg>Download for Android<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><p class="download-note">Android beta · APK download</p></div><div class="ticket-side"><span>DISCVAULT</span><b>KEEP<br/>WHAT<br/>YOU<br/>LOVE.</b><span>DVD / BLU-RAY / 4K</span></div></div><p class="install-note">On Android, open the downloaded APK to install. If prompted, allow installs from your browser, then follow the on-screen steps.</p></section><footer class="section-wrap"><a href="#top" class="brand"><img src="/brand/discvault-monogram.webp" alt="" width="34" height="34"/>DiscVault.</a><p>For the love of the films you own.</p><a href="mailto:hello@discvault.us">Say hello <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></footer></main><script type="module" src="/_next/static/chunks/index-Bkkb5UTK.js" id="_R_" async=""></script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("2:I[\"cb2758ce1ef4\",[],\"Children\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("3:I[\"976d29cce0da\",[],\"GlobalErrorBoundary\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("4:I[\"73ba91de4042\",[],\"default\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("5:I[\"976d29cce0da\",[],\"ErrorBoundary\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("6:I[\"74cc16bc37a5\",[],\"LayoutSegmentProvider\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("7:I[\"cb2758ce1ef4\",[],\"Slot\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("8:I[\"976d29cce0da\",[],\"NotFoundBoundary\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("9:I[\"8e1c4fffeddf\",[],\"AppRouterScrollTarget\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("a:I[\"976d29cce0da\",[],\"RedirectBoundary\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push(":HL[\"/_next/static/css/index.Gnga_XIz.css\",\"style\"     ]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("0:{\"page:/\":\"$L1\",\"layout:/\":[[[\"$\",\"link\",\"css:/_next/static/css/index.Gnga_XIz.css\",{\"rel\":\"stylesheet\",\"precedence\":\"vite-rsc/importer-resources\",\"href\":\"/_next/static/css/index.Gnga_XIz.css\",\"data-rsc-css-href\":\"/_next/static/css/index.Gnga_XIz.css\"}],\"$undefined\"],[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[\"$\",\"body\",null,{\"className\":\"__variable_cormorant_garamond_02r7y5q __variable_manrope_0lv6qco __variable_ibm_plex_mono_15tc0xw\",\"children\":[\"$\",\"$L2\",null,{}]}]}]],\"route:/\":[[[\"$\",\"meta\",null,{\"charSet\":\"utf-8\"}],[[\"$\",\"title\",\"0\",{\"children\":\"DiscVault — Some things are worth holding on to\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Catalog your DVD, Blu-ray and 4K collection, choose what to watch and keep your movie history local.\"}],[\"$\",\"link\",\"2\",{\"data-vinext-streamed-icon\":\"$undefined\",\"rel\":\"icon\",\"href\":\"/brand/favicon-32.png\",\"type\":\"image/png\",\"sizes\":\"32x32\",\"color\":\"$undefined\",\"media\":\"$undefined\",\"fetchPriority\":\"$undefined\"}],[\"$\",\"link\",\"3\",{\"data-vinext-streamed-icon\":\"$undefined\",\"rel\":\"icon\",\"href\":\"/brand/discvault-monogram-512.png\",\"type\":\"image/png\",\"sizes\":\"512x512\",\"color\":\"$undefined\",\"media\":\"$undefined\",\"fetchPriority\":\"$undefined\"}],[\"$\",\"link\",\"4\",{\"data-vinext-streamed-icon\":\"$undefined\",\"rel\":\"apple-touch-icon\",\"href\":\"/brand/apple-touch-icon.png\",\"type\":\"image/png\",\"sizes\":\"180x180\",\"color\":\"$undefined\",\"media\":\"$undefined\",\"fetchPriority\":\"$undefined\"}]],[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]],[\"$\",\"$L3\",null,{\"fallback\":\"$4\",\"children\":[\"$\",\"$L5\",null,{\"fallback\":\"$4\",\"children\":[\"$\",\"$L6\",null,{\"providerId\":\"layout:/\",\"segmentMap\":{\"children\":[]},\"children\":[\"$\",\"$L7\",null,{\"id\":\"layout:/\",\"parallelSlots\":\"$undefined\",\"children\":[\"$\",\"$L8\",null,{\"resetKey\":\"\",\"fallback\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"children\":[\"$\",\"$L9\",null,{\"children\":[\"$\",\"$La\",null,{\"children\":[[\"$\",\"$L6\",null,{\"providerId\":\"page:/\",\"segmentMap\":{\"children\":[\"__PAGE__\"]},\"children\":[\"$\",\"$L7\",null,{\"id\":\"page:/\"}]}],null]}]}]}]}]}]}]}],null,null],\"__route\":\"route:/\",\"__interceptionContext\":null,\"__layoutIds\":[\"layout:/\"],\"__rootLayout\":\"/\",\"__bfcacheSegmentIdentities\":{\"layout:/\":\"[\\\"layout\\\",\\\"layout:/\\\",\\\"root-boundary:/\\\",\\\"\\\"]\",\"page:/\":\"[\\\"page\\\",\\\"page:/\\\",\\\"root-boundary:/\\\",\\\"\\\"]\"},\"__srcPage\":[\"page\"],\"__layoutFlags\":{\"layout:/\":\"s\"},\"__artifactCompatibility\":{\"schemaVersion\":1,\"graphVersion\":\"app-route-graph:1177fd80f83fa7b0\",\"deploymentVersion\":\"130e0603-83c8-40cb-9fe0-32ed71c417ac\",\"appElementsSchemaVersion\":1,\"rscPayloadSchemaVersion\":1,\"rootBoundaryId\":\"/\",\"renderEpoch\":null}}\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("b:I[\"6efdf509a785\",[],\"default\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("1:[\"$\",\"$Lb\",null,{\"params\":\"$@c\",\"searchParams\":\"$@d\"}]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("c:{}\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("d:{}\n")</script><script>Object.assign(((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}),{"initialCacheKind":"dynamic"});((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).done=true</script></body></html>
