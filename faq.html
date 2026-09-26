@@ -40,7 +40,7 @@
     {
       "@type": "Question",
       "name": "Is my collection data private?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. DiscVault is local-first: your entire collection is stored only in a database on your own device. There is no DiscVault account, no analytics inside the app, and nothing is uploaded to us. The app only reaches the network for movie metadata (TMDB) and barcode lookups (UPCItemDB), at your direction." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. DiscVault is local-first: your collection stays on your device unless you choose to export or share it. No DiscVault account login is required. In native builds with RevenueCat enabled, RevenueCat uses an anonymous App User ID and purchase/subscription information for Pro validation, purchase restoration and purchase analytics. It can connect at app launch and when the app returns to the foreground, even if you never open the paywall. Your collection content is not sent to RevenueCat. Other network services include TMDB, UPCItemDB and optional beta-license validation. See the Privacy Policy for details." }
     },
     {
       "@type": "Question",
@@ -65,7 +65,7 @@
     {
       "@type": "Question",
       "name": "Does DiscVault work offline?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Browsing and managing your collection works fully offline because all of your data lives on the device. A network connection is only needed when you scan or search for a new film, to fetch its metadata and cover art." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Browsing and managing your saved collection works offline. An internet connection is needed for online movie metadata, cover art and barcode lookups, and for purchasing, restoring or validating Pro access and optional beta licenses. In native builds with RevenueCat enabled, the app can also contact RevenueCat at launch and when it returns to the foreground, even without opening the paywall." }
     },
     {
       "@type": "Question",
@@ -114,7 +114,7 @@
         </details>
         <details>
           <summary>Is my collection data private?</summary>
-          <div class="a">Yes. DiscVault is <strong>local-first</strong>: your entire collection is stored only on your own device. There's no DiscVault account, no in-app analytics, and nothing is uploaded to us. The app only reaches the network for movie metadata (TMDB) and barcode lookups (UPCItemDB), at your direction. See the <a href="/privacy">Privacy Policy</a>.</div>
+          <div class="a">Yes. DiscVault is <strong>local-first</strong>: your collection stays on your device unless you choose to export or share it. No DiscVault account login is required. In native builds with RevenueCat enabled, RevenueCat uses an anonymous App User ID and purchase/subscription information for Pro validation, purchase restoration and purchase analytics. It can connect at app launch and when the app returns to the foreground, even if you never open the paywall. <strong>Your collection content is not sent to RevenueCat.</strong> Other network services include TMDB, UPCItemDB and optional beta-license validation. See the <a href="/privacy">Privacy Policy</a> for details.</div>
         </details>
         <details>
           <summary>What platforms does DiscVault support?</summary>
@@ -134,7 +134,7 @@
         </details>
         <details>
           <summary>Does DiscVault work offline?</summary>
-          <div class="a">Browsing and managing your collection works fully offline, because all your data lives on the device. A connection is only needed when you scan or search for a new film, to fetch its metadata and cover art.</div>
+          <div class="a">Browsing and managing your saved collection works offline. An internet connection is needed for online movie metadata, cover art and barcode lookups, and for purchasing, restoring or validating Pro access and optional beta licenses. In native builds with RevenueCat enabled, the app can also contact RevenueCat at launch and when it returns to the foreground, even without opening the paywall.</div>
         </details>
         <details>
           <summary>How does DiscVault help me decide what to watch?</summary>
@@ -157,7 +157,7 @@
   <div class="wrap">
     <div>
       <div class="brand" style="margin-bottom:10px;"><img src="/icon.png" alt="" style="width:26px;height:26px;border-radius:7px;" /> DiscVault</div>
-      <div>Local-first · your collection never leaves your device.</div>
+      <div>Local-first · your collection stays on your device unless you export or share it.</div>
       <div class="foot-links" style="margin-top:14px;">
         <a href="/#features">Features</a>
         <a href="/faq">FAQ</a>

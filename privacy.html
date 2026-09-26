@@ -4,13 +4,13 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>DiscVault — Privacy Policy</title>
-<meta name="description" content="DiscVault privacy policy — a local-first app. Your collection stays on your device; no accounts, no analytics, nothing sold." />
+<meta name="description" content="How DiscVault keeps your collection on your device and uses RevenueCat for Pro purchases, subscription management and purchase analytics." />
 <meta name="theme-color" content="#0c0d10" />
 <link rel="canonical" href="https://discvault.us/privacy" />
 <link rel="icon" href="./favicon.png" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="DiscVault — Privacy Policy" />
-<meta property="og:description" content="DiscVault is local-first: your collection stays on your device. No accounts, no analytics, nothing sold." />
+<meta property="og:description" content="How DiscVault keeps your collection on your device and uses RevenueCat for Pro purchases, subscription management and purchase analytics." />
 <meta property="og:url" content="https://discvault.us/privacy" />
 <meta property="og:image" content="https://discvault.us/og-image.png" />
 <link rel="stylesheet" href="./styles.css" />
@@ -39,51 +39,71 @@
     <div class="wrap doc">
       <p class="eyebrow">Privacy</p>
       <h1 style="font-size:34px;">Privacy Policy</h1>
-      <p class="muted">Last updated: 2026 · DiscVault beta</p>
+      <p class="muted">Last updated: September 25, 2026</p>
 
-      <p>DiscVault is <strong>local-first</strong>. Your collection — titles, editions, copies, notes,
-      photos, watch history and stats — is stored only in a database on your own device. There is no
-      DiscVault account, and that data is never uploaded to us or anyone else.</p>
+      <p>DiscVault is local-first. Your collection — titles, editions, copies, notes, photos, watch history and stats — is stored on your own device. There is no DiscVault account, and we do not upload your collection to our servers or to RevenueCat. If you choose to export or share a backup, you control where that copy goes. Purchase records are handled separately, as explained below.</p>
 
       <h2>What leaves your device</h2>
-      <p>The app only makes network requests for these specific, user-driven purposes:</p>
+
+      <p>The app makes network requests for the following purposes, including automatic purchase-status checks where purchases are configured:</p>
+
       <ul>
-        <li><strong>Movie metadata (TMDB).</strong> When you scan or search for a film, DiscVault asks
-        The Movie Database for the cover, cast, runtime and synopsis, using a free API key that
-        <em>you</em> provide. Your request goes directly from your device to TMDB.</li>
-        <li><strong>Barcode lookup (UPCItemDB).</strong> When you scan a barcode, the number is sent to
-        UPCItemDB to resolve the product title. Scanned barcodes are cached on your device so each is
-        only ever looked up once.</li>
-        <li><strong>Beta unlock (optional).</strong> If you redeem a beta Pro code, the app sends that
-        code and a randomly generated install identifier to our license server purely to validate the
-        code. We do not collect your name, email, or any other personal information.</li>
+
+        <li><strong>Movie metadata (TMDB).</strong> When you scan or search for a film, DiscVault asks The Movie Database for the cover, cast, runtime and synopsis, using a free API key that you provide. Your request goes directly from your device to TMDB.</li>
+
+        <li><strong>Barcode lookup (UPCItemDB).</strong> When you scan a barcode, the number is sent to UPCItemDB to resolve the product title. Scanned barcodes are cached on your device so each is only ever looked up once.</li>
+
+        <li><strong>Beta unlock (optional).</strong> If you redeem a beta Pro code, the app sends that code and a randomly generated install identifier to our license server to validate the code. We do not ask for your name or email to redeem a beta code.</li>
+
+        <li><strong>Pro access (RevenueCat).</strong> In native app builds where purchases are configured, RevenueCat starts automatically and may contact its service when the app starts or returns to the foreground to refresh Pro access, even if you do not open the purchase screen or buy anything.</li>
+
       </ul>
 
+      <h2>Purchases and RevenueCat</h2>
+
+      <p>We use RevenueCat to validate purchases, track subscription status, restore eligible Pro access, display purchase and management screens, and understand purchase and paywall performance.</p>
+
+      <p>RevenueCat uses a randomly generated anonymous App User ID. It processes purchase and subscription history, product and transaction identifiers, store receipts or purchase tokens, and purchase, renewal and expiration dates. It also receives technical information such as device type, operating system, app version, locale and last app activity time, and records interactions with its paywalls, such as views and dismissals. An anonymous ID identifies an app installation without requiring a DiscVault login; it does not mean no data is collected.</p>
+
+      <p>DiscVault does not send your collection, photos, watch history, name or email to RevenueCat. Store purchases are billed by the store you use, such as Google Play or the Apple App Store where supported. DiscVault does not receive your full payment card details.</p>
+
+      <p>RevenueCat processes this information on our behalf, and we can view purchase and subscription information through its dashboard. RevenueCat stores customer data in the United States and encrypts it in transit. More information about its handling of data is available at <a href="https://www.revenuecat.com/privacy-policy">https://www.revenuecat.com/privacy-policy</a>. The purchasing store also handles transaction data under its own privacy policy.</p>
+
       <h2>What we collect</h2>
-      <p><strong>Nothing.</strong> DiscVault contains no analytics, no advertising, no crash-reporting
-      SDKs, and no tracking. We have no servers that store your collection and no way to see it.</p>
+
+      <p>DiscVault has no advertising or analytics about your collection usage. RevenueCat processes the purchase, technical and paywall information described above for Pro access and purchase analytics. We do not operate a server that stores your collection. If you contact support, we receive the information you choose to send so we can respond.</p>
 
       <h2>Permissions</h2>
+
       <ul>
-        <li><strong>Camera</strong> — used solely to scan the barcodes on your disc cases. No images
-        from scanning are stored or transmitted.</li>
-        <li><strong>Photos</strong> — only if you choose to attach a photo of your own case or shelf.
-        Those photos stay on your device.</li>
+
+        <li><strong>Camera</strong> — used to scan barcodes and, if you choose, photograph your cover, spine or back cover. Images from barcode scanning are not stored or transmitted; photos you choose to save stay on your device unless you export or share them.</li>
+
+        <li><strong>Photos</strong> — accessed only if you choose to attach your own photos. Saved photos stay on your device unless you export or share them.</li>
+
       </ul>
 
       <h2>Your data, your control</h2>
-      <p>You can export your entire collection to CSV or a JSON backup at any time from Settings, and
-      you can delete everything by clearing the app's data or uninstalling. Because the data lives on
-      your device, uninstalling removes it permanently.</p>
+
+      <p>You can export your collection to CSV or a JSON backup from Settings. Clearing the app's data or uninstalling removes the collection stored by the app on that device; keep a backup if you want to restore it. Copies you exported or shared must be deleted separately.</p>
+
+      <p>Uninstalling or clearing local data does not delete purchase records held by RevenueCat or the store, and does not cancel a subscription. Use Manage purchases in Settings or the purchasing store to manage or cancel subscriptions.</p>
+
+      <p>For questions or requests to access, correct or delete purchase-related data we handle through RevenueCat, contact <a href="mailto:tex@discvault.us">tex@discvault.us</a>. We may need a purchase reference or other information to locate the anonymous customer record and verify your request; do not send payment card details. Purchase records may need to be retained to provide access, meet legal obligations or resolve disputes. The store handles requests for its own records separately. Deleting purchase data is not a cancellation or refund request.</p>
 
       <h2>Children</h2>
-      <p>DiscVault is not directed at children under 13 and collects no personal data from anyone.</p>
+
+      <p>DiscVault is not directed at children under 13.</p>
 
       <h2>Changes</h2>
+
       <p>If this policy changes, the updated version will be posted on this page.</p>
 
       <h2>Contact</h2>
+
       <p>Questions? Reach out at <a href="mailto:tex@discvault.us">tex@discvault.us</a>.</p>
+
+      <nav aria-label="Legal pages"><a href="/privacy">Privacy Policy</a> · <a href="/terms">Terms of Service &amp; EULA</a></nav>
 
       <div class="tmdb-attr" style="margin-top:40px;">
         <img src="./tmdb.svg" alt="TMDB" />

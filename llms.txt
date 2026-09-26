@@ -1,11 +1,11 @@
 # DiscVault
 
-> DiscVault is a free, local-first Android app for cataloging and tracking a physical movie collection (DVD, Blu-ray and 4K UHD). You scan a disc's barcode to add it in seconds, track every edition and individual copy you own, avoid buying duplicates, and get recommendations on what to watch next from your own shelf. Your collection stays on your device — there is no account and no tracking. Free for up to 100 movies; an optional Pro tier removes the limit.
+> DiscVault is a free, local-first Android app for cataloging and tracking a physical movie collection (DVD, Blu-ray and 4K UHD). You scan a disc's barcode to add it in seconds, track every edition and individual copy you own, avoid buying duplicates, and get recommendations on what to watch next from your own shelf. Your collection stays on your device unless you export or share it, and no DiscVault account login is required. RevenueCat handles Pro purchase validation, restoration and purchase analytics in supported native builds; collection content is not sent to RevenueCat. Free for up to 100 movies; an optional Pro tier removes the limit.
 
 ## Key facts
 - Platform: Android. Installed by sideloading an APK from the website; also distributed via the Solana dApp Store.
 - Price: Free for up to 100 movies. Pro tier unlocks an unlimited catalog.
-- Privacy: Local-first. All collection data is stored on-device in SQLite. No DiscVault account, no analytics in the app, no data selling. Network is used only for movie metadata (TMDB) and barcode lookups (UPCItemDB), at the user's direction, using the user's own free TMDB API key.
+- Privacy: Local-first. Collection data is stored on-device in SQLite and stays there unless the user exports or shares it. No DiscVault account login is required, and collection content is not sent to RevenueCat. In native builds with RevenueCat enabled, an anonymous App User ID and purchase/subscription information are used for Pro validation, purchase restoration and purchase analytics. RevenueCat can connect at app launch and when the app returns to the foreground, even without opening the paywall. Other network services include movie metadata (TMDB, using the user's own free API key), barcode lookups (UPCItemDB) and optional beta-license validation. See the Privacy Policy for details.
 - Core features: barcode scanning, edition-level tracking (title → release → copy), a "what to watch next" recommender, a viewing journal/calendar, discovery and wishlist, collector stats and badges, custom cover photos, and CSV/JSON import & export (including from CLZ).
 - Good for: physical-media collectors who want to know which exact edition (4K, Blu-ray, steelbook, slipcover, Criterion spine number) they own and never double-buy at the store.
 
